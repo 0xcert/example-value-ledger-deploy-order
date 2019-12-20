@@ -89,7 +89,7 @@ btnPerformOrder.addEventListener("click", async () => {
     await mutation.complete();
     printMessage("Atomic deployment completed");
     printMessage(
-      "Created asset ledger address: " + mutation.logs[0].createdContract
+      "Created value ledger address: " + mutation.logs[0].createdContract
     );
   }
 });
