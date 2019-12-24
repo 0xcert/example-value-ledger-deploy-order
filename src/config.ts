@@ -10,8 +10,8 @@ export const config = {
       valueLedgerDeployOrderId: "0x327577e70e21AcEe01447AD06939Fb4057232b2A"
     }
   },
-  valueLedgerId: "0xc0603333E382f0247E9dFEa8AC273aF2Ba826D8F", // Input you own value ledger id
-  account1Id: "0xF9196F9f176fd2eF9243E8960817d5FbE63D79aa", // Input your primary metamask account Id.
+  valueLedgerId: "", // Input you own value ledger id
+  account1Id: "", // Input your primary metamask account Id.
   signature: ""
 };
 
