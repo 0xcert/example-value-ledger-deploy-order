@@ -1,14 +1,14 @@
 import { OrderKind, ValueLedgerDeployOrder } from "@0xcert/ethereum-gateway";
 
+import {
+  buildGatewayConfig,
+  NetworkKind
+} from "@0xcert/ethereum-metamask-provider";
+
 export const config = {
   providerConfig: {
     requiredConfirmations: 1,
-    // ropsten config
-    gatewayConfig: {
-      actionsOrderId: "0x6Cb40DB529637C218824a2660EFC7CbaD5485115",
-      assetLedgerDeployOrderId: "0x9de066264347165693eC890ccC1C8Af8f9A15f51",
-      valueLedgerDeployOrderId: "0x327577e70e21AcEe01447AD06939Fb4057232b2A"
-    }
+    gatewayConfig: buildGatewayConfig(NetworkKind.ROPSTEN) // ropsten config
   },
   valueLedgerId: "", // Input you own value ledger id
   account1Id: "", // Input your primary metamask account Id.
